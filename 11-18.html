@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<meta content="text/html; charset=UTF-8">
+
+<head>
+    <title>生日快樂! 陈星燃ᵕ̈</title>
+    <script language=JavaScript>
+    < !--
+    var caution = false
+        function setCookie(name, value, expires, path, domain, secure) {
+            var curCookie = name + "=" + escape(value) +
+                ((expires) ? "; expires=" + expires.toGMTString() : "") +
+                ((path) ? "; path=" + path : "") +
+                ((domain) ? "; domain=" + domain : "") +
+                ((secure) ? "; secure" : "")
+            if (!caution || (name + "=" + escape(value)).length <= 4000)
+                document.cookie = curCookie
+            else
+                if (confirm("Cookie exceeds 4KB and will be cut!"))
+                    document.cookie = curCookie
+        }
+        function getCookie(name) {
+            var prefix = name + "="
+            var cookieStartIndex = document.cookie.indexOf(prefix)
+            if (cookieStartIndex == -1)
+                return null
+            var cookieEndIndex = document.cookie.indexOf(";", cookieStartIndex + prefix.length)
+            if (cookieEndIndex == -1)
+                cookieEndIndex = document.cookie.length
+            return unescape(document.cookie.substring(cookieStartIndex + prefix.length, cookieEndIndex))
+        }
+        function deleteCookie(name, path, domain) {
+            if (getCookie(name)) {
+                document.cookie = name + "=" +
+                    ((path) ? "; path=" + path : "") +
+                    ((domain) ? "; domain=" + domain : "") +
+                    "; expires=Thu, 01-Jan-70 00:00:01 GMT"
+            }
+        }
+        function fixDate(date) {
+            var base = new Date(0)
+            var skew = base.getTime()
+            if (skew > 0)
+                date.setTime(date.getTime() - skew)
+        }
+        var now = new Date()
+        fixDate(now)
+        now.setTime(now.getTime() + 365 * 24 * 60 * 60 * 1000)
+        var visits = getCookie("counter")
+        if (!visits)
+            visits = 1
+        else
+            visits = parseInt(visits) + 1
+        setCookie("counter", visits, now)
+        document.write("您是第" + visits + "位访问本专题的！")
+    // -->
+    </script>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="theme-color" content="#3f51b5">
+    <link rel="icon" href="https://ws1.sinaimg.cn/large/0061kQOkly1ga0x1zv909j30u00u0756.jpg" type="image/jpg"
+        sizes="180x180">
+    <link rel="stylesheet" href="https://ht-liu.github.io/12-18/style.css">
+    <link rel="stylesheet" href="https://ht-liu.github.io/blog/style.css">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="indigo">
+    <meta name="apple-mobile-web-app-title" content="jialezi">
+
+    <link data-no-instant rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.1/dist/css/mdui.min.css"
+        integrity="sha256-lCFxSSYsY5OMx6y8gp8/j6NVngvBh3ulMtrf4SX5Z5A=" crossorigin="anonymous">
+    <script data-no-instant src="https://cdn.jsdelivr.net/npm/mdui@0.4.1/dist/js/mdui.min.js"
+        integrity="sha256-dZxrLDxoyEQADIAGrWhPtWqjDFvZZBigzArprSzkKgI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@iconify/iconify@1.0.2/dist/iconify.min.js"></script>
+    <style>
+        .mdui-appbar .mdui-toolbar height:56px;
+        font-size: 10px;
+        }
+
+        .mdui-toolbar>* {
+            padding: 0 6px;
+            margin: 0 2px;
+            opacity: 0.5;
+        }
+
+        .mdui-toolbar>.mdui-typo-headline {
+            padding: 0 1px 0 0;
+        }
+
+        .mdui-toolbar>i {
+            padding: 0;
+        }
+
+        .mdui-toolbar>a:hover,
+        a.mdui-typo-headline,
+        a.active {
+            opacity: 1;
+        }
+
+        .mdui-container {
+            max-width: 950px;
+        }
+
+        .mdui-list-item {
+            -webkit-transition: none;
+            transition: none;
+        }
+
+        .mdui-list>.th {
+            background-color: initial;
+        }
+
+        .mdui-list-item>a {
+            width: 100%;
+            line-height: 48px
+        }
+
+        .mdui-list-item {
+            margin: 2px 0px;
+            padding: 0;
+        }
+
+        .mdui-toolbar>a:last-child {
+            opacity: 1;
+        }
+
+        #instantclick-bar {
+            background: white;
+        }
+
+        #all {
+            background: white;
+        }
+
+        @media screen and (max-width:950px) {
+            .mdui-list-item .mdui-text-right {
+                display: none;
+            }
+
+            .mdui-container {
+                width: 100% !important;
+                margin: 0px;
+            }
+
+            .mdui-toolbar>* {
+                display: none;
+            }
+
+            .mdui-toolbar>a:last-child,
+            .mdui-toolbar>.mdui-typo-headline,
+            .mdui-toolbar>i:first-child {
+                display: block;
+            }
+        }
+
+        .spec-col {
+            padding: .9em;
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            flex: 1 50%;
+            min-width: 225px
+        }
+
+        .spec-type {
+            font-size: 1.35em
+        }
+
+        .spec-value {
+            font-size: 1.25em
+        }
+
+        .spec-text {
+            float: left
+        }
+
+        .device-section {
+            padding-top: 30px
+        }
+
+        .spec-device-img {
+            height: auto;
+            height: 340px;
+            padding-bottom: 30px
+        }
+
+        #dl-header {
+            margin: 0
+        }
+
+        #dl-section {
+            padding-top: 10px
+        }
+
+        #dl-latest {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+    </style>
+    <script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?314168bd05640200f941b0bf1c298207";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+</head>
+
+<body class="mdui-appbar-with-toolbar mdui-theme-primary-indigo mdui-theme-accent-pink" id="all" style="background-image: url(06.jpg);  background-attachment: fixed; background-repeat:no-repeat;background-position:center;">
+    <header class="mdui-appbar mdui-appbar-fixed mdui-color-theme mdui-appbar-inset">
+        <script src="https://ht-liu.github.io/12-18/snowflakes.min.js"></script>
+        <script src="https://ht-liu.github.io/12-18/index.js"></script>
+
+    </header>
+    <div class="mdui-container">
+        <div class="mdui-container-fluid">
+            <audio autoplay="autopaly">
+                <source src="music/HappyBirthday.mp3" type="audio/mp3" />
+            </audio>
+        </div>
+          <x-sign>
+            今日ᵕ̈:2023年11月18日<br /><br />
+          </x-sign>
+          <x-sign>
+             地点ᵕ̈:北京儿ᵕ̈<br /><br />
+          </x-sign>
+          <x-sign>
+            主题ᵕ̈：ʜᴀᴘᴘʏ ʙɪʀᴛʜᴅᴀʏ ᴛᴏ ʏᴏᴜ  ◟̆◞̆<br />
+          </x-sign>
+          <x-sign>
+            <small>♡<br /></small> / \
+          </x-sign>
+          <x-sign>
+             / ²⁰²³
+                              \<br />
+          </x-sign>
+          <x-sign>
+            ∞∞∞<br />
+          </x-sign>
+          <x-sign>
+            ¹²³⁴⁵⁶⁷⁸⁹⁰<br /><br />
+          </x-sign>
+          <div style="text-align:center;clear:both">
+            <script src="https://ht-liu.github.io/blog/index.js" type="text/javascript"></script>
+          </div>
+</body>
+
+</html>
