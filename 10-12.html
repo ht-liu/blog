@@ -3,9 +3,15 @@
 <meta content="text/html; charset=UTF-8">
 
 <head>
-    <title>生日快樂!媛儿</title>
+    <title>生日快樂!</title>
+    <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
+    <script>
+        var sf = new Snowflakes({
+            color: "#cccccc"
+        });
+    </script>
     <script language=JavaScript>
-    < !--
+    //< !--
     var caution = false
         function setCookie(name, value, expires, path, domain, secure) {
             var curCookie = name + "=" + escape(value) +
@@ -53,9 +59,19 @@
             visits = parseInt(visits) + 1
         setCookie("counter", visits, now)
         document.write("您是第" + visits + "位访问本专题的！")
+        //document.getElementById("sitetimes").innerHTML=""+"您是第" + visits + "位访问本专题的！"
     // -->
     </script>
-
+    <!--百度统计-->
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?c1f785caa2ccd16fe1660b9d307c1014";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
@@ -137,7 +153,7 @@
         }
 
         #all {
-            background: white;
+            background: black;
         }
 
         @media screen and (max-width:950px) {
@@ -254,6 +270,65 @@
           <div style="text-align:center;clear:both">
             <script src="https://ht-liu.github.io/blog/index.js" type="text/javascript"></script>
           </div>
-</body>
+    </div>
 
+<div class="footer-info">
+    Copyright © 2021-2024 XX软件&nbsp;&nbsp;网站已运行：<span id="sitetime"></span><br>
+</div>
+<script>
+    function siteTime(){
+        window.setTimeout("siteTime()", 1000);
+        var seconds = 1000
+        var minutes = seconds * 60
+        var hours = minutes * 60
+        var days = hours * 24
+        var years = days * 365
+        var today = new Date()
+        var todayYear = today.getFullYear()
+        var todayMonth = today.getMonth()
+        var todayDate = today.getDate()
+        var todayHour = today.getHours()
+        var todayMinute = today.getMinutes()
+        var todaySecond = today.getSeconds()
+        var t1 = Date.UTC(2021,10,2,0,0,0)
+        var t2 = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond)
+        var diff = t2-t1
+        var diffYears = Math.floor(diff/years)
+        var diffDays = Math.floor((diff/days)-diffYears*365)
+        var diffHours =Math.floor((diff-(diffYears*365+diffDays)*days)/hours)
+        var diffMinutes =Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes)
+        var diffSeconds =Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds)
+        document.getElementById("sitetime").innerHTML=""+diffYears+"年"+diffDays+"天"+diffHours+"时"+diffMinutes+"分"+diffSeconds+"秒"
+    }
+    siteTime()
+</script>
+<!--底部波浪开始-->
+<div class="wiiuii_layout">
+    <svg class="editorial"
+         xmlns="http://www.w3.org/2000/svg"
+         xmlns:xlink="http://www.w3.org/1999/xlink"
+         viewBox="0 24 150 28"
+         preserveAspectRatio="none">
+        <defs>
+            <path id="gentle-wave"
+                  d="M-160 44c30 0
+    58-18 88-18s
+    58 18 88 18
+    58-18 88-18
+    58 18 88 18
+    v44h-352z" />
+        </defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="50" y="0" fill="#6a7277"/>/*颜色在这里可以自己改*/
+            <use xlink:href="#gentle-wave" x="50" y="3" fill="#3f4549"/>
+            <use xlink:href="#gentle-wave" x="50" y="6" fill="#22292d"/>
+        </g>
+    </svg>
+</div>
+<style type='text/css'>
+    .parallax > use{animation: move-forever 12s linear infinite;}.parallax > use:nth-child(1){animation-delay: -2s;}.parallax > use:nth-child(2){animation-delay: -2s; animation-duration: 5s;}.parallax > use:nth-child(3){animation-delay: -4s; animation-duration: 3s;}@keyframes move-forever{0%{transform: translate(-90px, 0%);} 100%{transform: translate(85px, 0%);}}.wiiuii_layout{width: 100%;height: 40px;position: relative;overflow: hidden;z-index: 1;background: var(--footer-bg);}.editorial{display: block; width: 100%; height: 40px; margin: 0;}
+</style>
+<!--底部波浪结束-->
+
+</body>
 </html>
